@@ -1,0 +1,1236 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 15000 10000
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 10625 1425 0    50   ~ 0
+12-
+$Comp
+L Connector_Generic:Conn_02x12_Top_Bottom ATXPOWER1
+U 1 1 67BB51AE
+P 10325 1825
+F 0 "ATXPOWER1" H 10375 2542 50  0000 C CNN
+F 1 "Conn_02x12_Top_Bottom" H 10375 2451 50  0000 C CNN
+F 2 "My:24_PIN_ATX_POWER" H 10325 1825 50  0001 C CNN
+F 3 "~" H 10325 1825 50  0001 C CNN
+	1    10325 1825
+	1    0    0    -1  
+$EndComp
+Text Label 10625 1525 0    50   ~ 0
+GND
+Text Label 10625 1625 0    50   ~ 0
+POWER_ON
+Text Label 10625 1825 0    50   ~ 0
+GND
+Text Label 10625 1925 0    50   ~ 0
+GND
+Text Label 10625 2125 0    50   ~ 0
+5+
+Text Label 10125 1525 2    50   ~ 0
+GND
+Text Label 10125 1625 2    50   ~ 0
+5+
+Text Label 10125 1725 2    50   ~ 0
+GND
+Text Label 10125 1825 2    50   ~ 0
+5+
+Text Label 10125 2025 2    50   ~ 0
+POWER_GOOD
+Text Label 10125 2225 2    50   ~ 0
+12+
+Text Label 10125 2125 2    50   ~ 0
+5+SB
+$Comp
+L Switch:SW_Push SW1
+U 1 1 67BB7B9F
+P 12600 3200
+F 0 "SW1" H 12600 3485 50  0000 C CNN
+F 1 "Power Button" H 12600 3394 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 12600 3400 50  0001 C CNN
+F 3 "~" H 12600 3400 50  0001 C CNN
+	1    12600 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J8
+U 1 1 67BB7F99
+P 13925 3025
+F 0 "J8" H 14005 3017 50  0000 L CNN
+F 1 "Power Pins" H 14005 2926 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 13925 3025 50  0001 C CNN
+F 3 "~" H 13925 3025 50  0001 C CNN
+	1    13925 3025
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 67BB8387
+P 12400 875
+F 0 "R1" V 12550 825 50  0000 L CNN
+F 1 "27k ohm" V 12500 700 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 12330 875 50  0001 C CNN
+F 3 "~" H 12400 875 50  0001 C CNN
+	1    12400 875 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:CAP C1
+U 1 1 67BB8B27
+P 1300 1225
+F 0 "C1" V 1575 1175 50  0000 L CNN
+F 1 "0.1uF" V 1500 1150 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 1300 1225 50  0001 C CNN
+F 3 "~" H 1300 1225 50  0001 C CNN
+	1    1300 1225
+	0    1    -1   0   
+$EndComp
+$Comp
+L Connector:Bus_ISA_16bit ISA1
+U 1 1 67BB8F09
+P 8575 6425
+F 0 "ISA1" H 8575 9192 50  0000 C CNN
+F 1 "Bus_ISA_16bit" H 8575 9101 50  0000 C CNN
+F 2 "Motherboard_ATX:16-bit-ISA" H 8575 6475 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 8575 6475 50  0001 C CNN
+	1    8575 6425
+	1    0    0    -1  
+$EndComp
+Text Label 7875 3925 2    50   ~ 0
+GND
+Text Label 7875 4025 2    50   ~ 0
+RESET
+Text Label 7875 4125 2    50   ~ 0
+5+
+Text Label 7875 4225 2    50   ~ 0
+IRQ2
+Text Label 7875 4325 2    50   ~ 0
+5-
+Text Label 7875 4425 2    50   ~ 0
+DRQ2
+Text Label 7875 4525 2    50   ~ 0
+12-
+Text Label 7875 4625 2    50   ~ 0
+NC
+Text Label 7875 4725 2    50   ~ 0
+12+
+Text Label 7875 4825 2    50   ~ 0
+GND
+Text Label 7875 4925 2    50   ~ 0
+SMEMW
+Text Label 7875 5025 2    50   ~ 0
+SMEMR
+Text Label 7875 5125 2    50   ~ 0
+IOW
+Text Label 7875 5225 2    50   ~ 0
+IOR
+Text Label 7875 5325 2    50   ~ 0
+DACK3
+Text Label 7875 5425 2    50   ~ 0
+DRQ3
+Text Label 7875 5525 2    50   ~ 0
+DACK1
+Text Label 7875 5625 2    50   ~ 0
+DRQ1
+Text Label 7875 5725 2    50   ~ 0
+REF
+Text Label 7875 5825 2    50   ~ 0
+CLK
+Text Label 7875 5925 2    50   ~ 0
+IRQ7
+Text Label 7875 6025 2    50   ~ 0
+IRQ6
+Text Label 7875 6125 2    50   ~ 0
+IRQ5
+Text Label 7875 6225 2    50   ~ 0
+IRQ4
+Text Label 7875 6325 2    50   ~ 0
+IRQ3
+Text Label 7875 6425 2    50   ~ 0
+DACK2
+Text Label 7875 6525 2    50   ~ 0
+TC
+Text Label 7875 6625 2    50   ~ 0
+ALE
+Text Label 7875 6725 2    50   ~ 0
+5+
+Text Label 7875 6825 2    50   ~ 0
+OSC
+Text Label 7875 6925 2    50   ~ 0
+GND
+Text Label 7875 7125 2    50   ~ 0
+MEMCS16
+Text Label 7875 7225 2    50   ~ 0
+IOCS16
+Text Label 7875 7325 2    50   ~ 0
+IRQ10
+Text Label 7875 7425 2    50   ~ 0
+IRQ11
+Text Label 7875 7525 2    50   ~ 0
+IRQ12
+Text Label 7875 7625 2    50   ~ 0
+IRQ15
+Text Label 7875 7725 2    50   ~ 0
+IRQ14
+Text Label 7875 7825 2    50   ~ 0
+DACK0
+Text Label 7875 7925 2    50   ~ 0
+DRQ0
+Text Label 7875 8025 2    50   ~ 0
+DACK5
+Text Label 7875 8125 2    50   ~ 0
+DRQ5
+Text Label 7875 8225 2    50   ~ 0
+DACK6
+Text Label 7875 8325 2    50   ~ 0
+DRQ6
+Text Label 7875 8425 2    50   ~ 0
+DACK7
+Text Label 7875 8525 2    50   ~ 0
+DRQ7
+Text Label 7875 8625 2    50   ~ 0
+5+
+Text Label 7875 8725 2    50   ~ 0
+MASTER
+Text Label 7875 8825 2    50   ~ 0
+GND
+Text Label 9275 8825 0    50   ~ 0
+D15
+Text Label 9275 8725 0    50   ~ 0
+D14
+Text Label 9275 8625 0    50   ~ 0
+D13
+Text Label 9275 8525 0    50   ~ 0
+D12
+Text Label 9275 8425 0    50   ~ 0
+D11
+Text Label 9275 8325 0    50   ~ 0
+D10
+Text Label 9275 8225 0    50   ~ 0
+D9
+Text Label 9275 8125 0    50   ~ 0
+D8
+Text Label 9275 8025 0    50   ~ 0
+MEMW
+Text Label 9275 7925 0    50   ~ 0
+MEMR
+Text Label 9275 7825 0    50   ~ 0
+LA17
+Text Label 9275 7725 0    50   ~ 0
+LA18
+Text Label 9275 7625 0    50   ~ 0
+LA19
+Text Label 9275 7525 0    50   ~ 0
+LA20
+Text Label 9275 7425 0    50   ~ 0
+LA21
+Text Label 9275 7325 0    50   ~ 0
+LA22
+Text Label 9275 7225 0    50   ~ 0
+LA23
+Text Label 9275 7125 0    50   ~ 0
+SBHE
+Text Label 9275 6925 0    50   ~ 0
+A0
+Text Label 9275 6825 0    50   ~ 0
+A1
+Text Label 9275 6725 0    50   ~ 0
+A2
+Text Label 9275 6625 0    50   ~ 0
+A3
+Text Label 9275 6525 0    50   ~ 0
+A4
+Text Label 9275 6425 0    50   ~ 0
+A5
+Text Label 9275 6325 0    50   ~ 0
+A6
+Text Label 9275 6225 0    50   ~ 0
+A7
+Text Label 9275 6125 0    50   ~ 0
+A8
+Text Label 9275 6025 0    50   ~ 0
+A9
+Text Label 9275 5925 0    50   ~ 0
+A10
+Text Label 9275 5725 0    50   ~ 0
+A12
+Text Label 9275 5825 0    50   ~ 0
+A11
+Text Label 9275 5625 0    50   ~ 0
+A13
+Text Label 9275 5525 0    50   ~ 0
+A14
+Text Label 9275 5425 0    50   ~ 0
+A15
+Text Label 9275 5325 0    50   ~ 0
+A16
+Text Label 9275 5225 0    50   ~ 0
+A17
+Text Label 9275 5125 0    50   ~ 0
+A18
+Text Label 9275 5025 0    50   ~ 0
+A19
+Text Label 9275 4925 0    50   ~ 0
+AEN
+Text Label 9275 4825 0    50   ~ 0
+IO_READY
+Text Label 9275 4725 0    50   ~ 0
+D0
+Text Label 9275 4625 0    50   ~ 0
+D1
+Text Label 9275 4525 0    50   ~ 0
+D2
+Text Label 9275 4425 0    50   ~ 0
+D3
+Text Label 9275 4325 0    50   ~ 0
+D4
+Text Label 9275 4225 0    50   ~ 0
+D5
+Text Label 9275 4125 0    50   ~ 0
+D6
+Text Label 9275 4025 0    50   ~ 0
+D7
+Text Label 9275 3925 0    50   ~ 0
+IO
+$Comp
+L Connector:Bus_ISA_16bit ISA4
+U 1 1 67BCD1F5
+P 6400 6400
+F 0 "ISA4" H 6400 9167 50  0000 C CNN
+F 1 "Bus_ISA_16bit" H 6400 9076 50  0000 C CNN
+F 2 "Motherboard_ATX:16-bit-ISA" H 6400 6450 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 6400 6450 50  0001 C CNN
+	1    6400 6400
+	1    0    0    -1  
+$EndComp
+Text Label 5700 3900 2    50   ~ 0
+GND
+Text Label 5700 4000 2    50   ~ 0
+RESET
+Text Label 5700 4100 2    50   ~ 0
+5+
+Text Label 5700 4200 2    50   ~ 0
+IRQ2
+Text Label 5700 4300 2    50   ~ 0
+5-
+Text Label 5700 4400 2    50   ~ 0
+DRQ2
+Text Label 5700 4500 2    50   ~ 0
+12-
+Text Label 5700 4600 2    50   ~ 0
+NC
+Text Label 5700 4700 2    50   ~ 0
+12+
+Text Label 5700 4800 2    50   ~ 0
+GND
+Text Label 5700 4900 2    50   ~ 0
+SMEMW
+Text Label 5700 5000 2    50   ~ 0
+SMEMR
+Text Label 5700 5100 2    50   ~ 0
+IOW
+Text Label 5700 5200 2    50   ~ 0
+IOR
+Text Label 5700 5300 2    50   ~ 0
+DACK3
+Text Label 5700 5400 2    50   ~ 0
+DRQ3
+Text Label 5700 5500 2    50   ~ 0
+DACK1
+Text Label 5700 5600 2    50   ~ 0
+DRQ1
+Text Label 5700 5700 2    50   ~ 0
+REF
+Text Label 5700 5800 2    50   ~ 0
+CLK
+Text Label 5700 5900 2    50   ~ 0
+IRQ7
+Text Label 5700 6000 2    50   ~ 0
+IRQ6
+Text Label 5700 6100 2    50   ~ 0
+IRQ5
+Text Label 5700 6200 2    50   ~ 0
+IRQ4
+Text Label 5700 6300 2    50   ~ 0
+IRQ3
+Text Label 5700 6400 2    50   ~ 0
+DACK2
+Text Label 5700 6500 2    50   ~ 0
+TC
+Text Label 5700 6600 2    50   ~ 0
+ALE
+Text Label 5700 6700 2    50   ~ 0
+5+
+Text Label 5700 6800 2    50   ~ 0
+OSC
+Text Label 5700 6900 2    50   ~ 0
+GND
+Text Label 5700 7100 2    50   ~ 0
+MEMCS16
+Text Label 5700 7200 2    50   ~ 0
+IOCS16
+Text Label 5700 7300 2    50   ~ 0
+IRQ10
+Text Label 5700 7400 2    50   ~ 0
+IRQ11
+Text Label 5700 7500 2    50   ~ 0
+IRQ12
+Text Label 5700 7600 2    50   ~ 0
+IRQ15
+Text Label 5700 7700 2    50   ~ 0
+IRQ14
+Text Label 5700 7800 2    50   ~ 0
+DACK0
+Text Label 5700 7900 2    50   ~ 0
+DRQ0
+Text Label 5700 8000 2    50   ~ 0
+DACK5
+Text Label 5700 8100 2    50   ~ 0
+DRQ5
+Text Label 5700 8200 2    50   ~ 0
+DACK6
+Text Label 5700 8300 2    50   ~ 0
+DRQ6
+Text Label 5700 8400 2    50   ~ 0
+DACK7
+Text Label 5700 8500 2    50   ~ 0
+DRQ7
+Text Label 5700 8600 2    50   ~ 0
+5+
+Text Label 5700 8700 2    50   ~ 0
+MASTER
+Text Label 5700 8800 2    50   ~ 0
+GND
+Text Label 7100 8800 0    50   ~ 0
+D15
+Text Label 7100 8700 0    50   ~ 0
+D14
+Text Label 7100 8600 0    50   ~ 0
+D13
+Text Label 7100 8500 0    50   ~ 0
+D12
+Text Label 7100 8400 0    50   ~ 0
+D11
+Text Label 7100 8300 0    50   ~ 0
+D10
+Text Label 7100 8200 0    50   ~ 0
+D9
+Text Label 7100 8100 0    50   ~ 0
+D8
+Text Label 7100 8000 0    50   ~ 0
+MEMW
+Text Label 7100 7900 0    50   ~ 0
+MEMR
+Text Label 7100 7800 0    50   ~ 0
+LA17
+Text Label 7100 7700 0    50   ~ 0
+LA18
+Text Label 7100 7600 0    50   ~ 0
+LA19
+Text Label 7100 7500 0    50   ~ 0
+LA20
+Text Label 7100 7400 0    50   ~ 0
+LA21
+Text Label 7100 7300 0    50   ~ 0
+LA22
+Text Label 7100 7200 0    50   ~ 0
+LA23
+Text Label 7100 7100 0    50   ~ 0
+SBHE
+Text Label 7100 6900 0    50   ~ 0
+A0
+Text Label 7100 6800 0    50   ~ 0
+A1
+Text Label 7100 6700 0    50   ~ 0
+A2
+Text Label 7100 6600 0    50   ~ 0
+A3
+Text Label 7100 6500 0    50   ~ 0
+A4
+Text Label 7100 6400 0    50   ~ 0
+A5
+Text Label 7100 6300 0    50   ~ 0
+A6
+Text Label 7100 6200 0    50   ~ 0
+A7
+Text Label 7100 6100 0    50   ~ 0
+A8
+Text Label 7100 6000 0    50   ~ 0
+A9
+Text Label 7100 5900 0    50   ~ 0
+A10
+Text Label 7100 5700 0    50   ~ 0
+A12
+Text Label 7100 5800 0    50   ~ 0
+A11
+Text Label 7100 5600 0    50   ~ 0
+A13
+Text Label 7100 5500 0    50   ~ 0
+A14
+Text Label 7100 5400 0    50   ~ 0
+A15
+Text Label 7100 5300 0    50   ~ 0
+A16
+Text Label 7100 5200 0    50   ~ 0
+A17
+Text Label 7100 5100 0    50   ~ 0
+A18
+Text Label 7100 5000 0    50   ~ 0
+A19
+Text Label 7100 4900 0    50   ~ 0
+AEN
+Text Label 7100 4800 0    50   ~ 0
+IO_READY
+Text Label 7100 4700 0    50   ~ 0
+D0
+Text Label 7100 4600 0    50   ~ 0
+D1
+Text Label 7100 4500 0    50   ~ 0
+D2
+Text Label 7100 4400 0    50   ~ 0
+D3
+Text Label 7100 4300 0    50   ~ 0
+D4
+Text Label 7100 4200 0    50   ~ 0
+D5
+Text Label 7100 4100 0    50   ~ 0
+D6
+Text Label 7100 4000 0    50   ~ 0
+D7
+Text Label 7100 3900 0    50   ~ 0
+IO
+$Comp
+L Connector:Bus_ISA_16bit ISA3
+U 1 1 67BCFAC4
+P 4100 6400
+F 0 "ISA3" H 4100 9167 50  0000 C CNN
+F 1 "Bus_ISA_16bit" H 4100 9076 50  0000 C CNN
+F 2 "Motherboard_ATX:16-bit-ISA" H 4100 6450 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 4100 6450 50  0001 C CNN
+	1    4100 6400
+	1    0    0    -1  
+$EndComp
+Text Label 3400 3900 2    50   ~ 0
+GND
+Text Label 3400 4000 2    50   ~ 0
+RESET
+Text Label 3400 4100 2    50   ~ 0
+5+
+Text Label 3400 4200 2    50   ~ 0
+IRQ2
+Text Label 3400 4300 2    50   ~ 0
+5-
+Text Label 3400 4400 2    50   ~ 0
+DRQ2
+Text Label 3400 4500 2    50   ~ 0
+12-
+Text Label 3400 4600 2    50   ~ 0
+NC
+Text Label 3400 4700 2    50   ~ 0
+12+
+Text Label 3400 4800 2    50   ~ 0
+GND
+Text Label 3400 4900 2    50   ~ 0
+SMEMW
+Text Label 3400 5000 2    50   ~ 0
+SMEMR
+Text Label 3400 5100 2    50   ~ 0
+IOW
+Text Label 3400 5200 2    50   ~ 0
+IOR
+Text Label 3400 5300 2    50   ~ 0
+DACK3
+Text Label 3400 5400 2    50   ~ 0
+DRQ3
+Text Label 3400 5500 2    50   ~ 0
+DACK1
+Text Label 3400 5600 2    50   ~ 0
+DRQ1
+Text Label 3400 5700 2    50   ~ 0
+REF
+Text Label 3400 5800 2    50   ~ 0
+CLK
+Text Label 3400 5900 2    50   ~ 0
+IRQ7
+Text Label 3400 6000 2    50   ~ 0
+IRQ6
+Text Label 3400 6100 2    50   ~ 0
+IRQ5
+Text Label 3400 6200 2    50   ~ 0
+IRQ4
+Text Label 3400 6300 2    50   ~ 0
+IRQ3
+Text Label 3400 6400 2    50   ~ 0
+DACK2
+Text Label 3400 6500 2    50   ~ 0
+TC
+Text Label 3400 6600 2    50   ~ 0
+ALE
+Text Label 3400 6700 2    50   ~ 0
+5+
+Text Label 3400 6800 2    50   ~ 0
+OSC
+Text Label 3400 6900 2    50   ~ 0
+GND
+Text Label 3400 7100 2    50   ~ 0
+MEMCS16
+Text Label 3400 7200 2    50   ~ 0
+IOCS16
+Text Label 3400 7300 2    50   ~ 0
+IRQ10
+Text Label 3400 7400 2    50   ~ 0
+IRQ11
+Text Label 3400 7500 2    50   ~ 0
+IRQ12
+Text Label 3400 7600 2    50   ~ 0
+IRQ15
+Text Label 3400 7700 2    50   ~ 0
+IRQ14
+Text Label 3400 7800 2    50   ~ 0
+DACK0
+Text Label 3400 7900 2    50   ~ 0
+DRQ0
+Text Label 3400 8000 2    50   ~ 0
+DACK5
+Text Label 3400 8100 2    50   ~ 0
+DRQ5
+Text Label 3400 8200 2    50   ~ 0
+DACK6
+Text Label 3400 8300 2    50   ~ 0
+DRQ6
+Text Label 3400 8400 2    50   ~ 0
+DACK7
+Text Label 3400 8500 2    50   ~ 0
+DRQ7
+Text Label 3400 8600 2    50   ~ 0
+5+
+Text Label 3400 8700 2    50   ~ 0
+MASTER
+Text Label 3400 8800 2    50   ~ 0
+GND
+Text Label 4800 8800 0    50   ~ 0
+D15
+Text Label 4800 8700 0    50   ~ 0
+D14
+Text Label 4800 8600 0    50   ~ 0
+D13
+Text Label 4800 8500 0    50   ~ 0
+D12
+Text Label 4800 8400 0    50   ~ 0
+D11
+Text Label 4800 8300 0    50   ~ 0
+D10
+Text Label 4800 8200 0    50   ~ 0
+D9
+Text Label 4800 8100 0    50   ~ 0
+D8
+Text Label 4800 8000 0    50   ~ 0
+MEMW
+Text Label 4800 7900 0    50   ~ 0
+MEMR
+Text Label 4800 7800 0    50   ~ 0
+LA17
+Text Label 4800 7700 0    50   ~ 0
+LA18
+Text Label 4800 7600 0    50   ~ 0
+LA19
+Text Label 4800 7500 0    50   ~ 0
+LA20
+Text Label 4800 7400 0    50   ~ 0
+LA21
+Text Label 4800 7300 0    50   ~ 0
+LA22
+Text Label 4800 7200 0    50   ~ 0
+LA23
+Text Label 4800 7100 0    50   ~ 0
+SBHE
+Text Label 4800 6900 0    50   ~ 0
+A0
+Text Label 4800 6800 0    50   ~ 0
+A1
+Text Label 4800 6700 0    50   ~ 0
+A2
+Text Label 4800 6600 0    50   ~ 0
+A3
+Text Label 4800 6500 0    50   ~ 0
+A4
+Text Label 4800 6400 0    50   ~ 0
+A5
+Text Label 4800 6300 0    50   ~ 0
+A6
+Text Label 4800 6200 0    50   ~ 0
+A7
+Text Label 4800 6100 0    50   ~ 0
+A8
+Text Label 4800 6000 0    50   ~ 0
+A9
+Text Label 4800 5900 0    50   ~ 0
+A10
+Text Label 4800 5700 0    50   ~ 0
+A12
+Text Label 4800 5800 0    50   ~ 0
+A11
+Text Label 4800 5600 0    50   ~ 0
+A13
+Text Label 4800 5500 0    50   ~ 0
+A14
+Text Label 4800 5400 0    50   ~ 0
+A15
+Text Label 4800 5300 0    50   ~ 0
+A16
+Text Label 4800 5200 0    50   ~ 0
+A17
+Text Label 4800 5100 0    50   ~ 0
+A18
+Text Label 4800 5000 0    50   ~ 0
+A19
+Text Label 4800 4900 0    50   ~ 0
+AEN
+Text Label 4800 4800 0    50   ~ 0
+IO_READY
+Text Label 4800 4700 0    50   ~ 0
+D0
+Text Label 4800 4600 0    50   ~ 0
+D1
+Text Label 4800 4500 0    50   ~ 0
+D2
+Text Label 4800 4400 0    50   ~ 0
+D3
+Text Label 4800 4300 0    50   ~ 0
+D4
+Text Label 4800 4200 0    50   ~ 0
+D5
+Text Label 4800 4100 0    50   ~ 0
+D6
+Text Label 4800 4000 0    50   ~ 0
+D7
+Text Label 4800 3900 0    50   ~ 0
+IO
+$Comp
+L Connector:Bus_ISA_16bit ISA2
+U 1 1 67BD15D9
+P 1850 6400
+F 0 "ISA2" H 1850 9167 50  0000 C CNN
+F 1 "Bus_ISA_16bit" H 1850 9076 50  0000 C CNN
+F 2 "Motherboard_ATX:16-bit-ISA" H 1850 6450 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 1850 6450 50  0001 C CNN
+	1    1850 6400
+	1    0    0    -1  
+$EndComp
+Text Label 1150 3900 2    50   ~ 0
+GND
+Text Label 1150 4000 2    50   ~ 0
+RESET
+Text Label 1150 4100 2    50   ~ 0
+5+
+Text Label 1150 4200 2    50   ~ 0
+IRQ2
+Text Label 1150 4300 2    50   ~ 0
+5-
+Text Label 1150 4400 2    50   ~ 0
+DRQ2
+Text Label 1150 4500 2    50   ~ 0
+12-
+Text Label 1150 4600 2    50   ~ 0
+NC
+Text Label 1150 4700 2    50   ~ 0
+12+
+Text Label 1150 4800 2    50   ~ 0
+GND
+Text Label 1150 4900 2    50   ~ 0
+SMEMW
+Text Label 1150 5000 2    50   ~ 0
+SMEMR
+Text Label 1150 5100 2    50   ~ 0
+IOW
+Text Label 1150 5200 2    50   ~ 0
+IOR
+Text Label 1150 5300 2    50   ~ 0
+DACK3
+Text Label 1150 5400 2    50   ~ 0
+DRQ3
+Text Label 1150 5500 2    50   ~ 0
+DACK1
+Text Label 1150 5600 2    50   ~ 0
+DRQ1
+Text Label 1150 5700 2    50   ~ 0
+REF
+Text Label 1150 5800 2    50   ~ 0
+CLK
+Text Label 1150 5900 2    50   ~ 0
+IRQ7
+Text Label 1150 6000 2    50   ~ 0
+IRQ6
+Text Label 1150 6100 2    50   ~ 0
+IRQ5
+Text Label 1150 6200 2    50   ~ 0
+IRQ4
+Text Label 1150 6300 2    50   ~ 0
+IRQ3
+Text Label 1150 6400 2    50   ~ 0
+DACK2
+Text Label 1150 6500 2    50   ~ 0
+TC
+Text Label 1150 6600 2    50   ~ 0
+ALE
+Text Label 1150 6700 2    50   ~ 0
+5+
+Text Label 1150 6800 2    50   ~ 0
+OSC
+Text Label 1150 6900 2    50   ~ 0
+GND
+Text Label 1150 7100 2    50   ~ 0
+MEMCS16
+Text Label 1150 7200 2    50   ~ 0
+IOCS16
+Text Label 1150 7300 2    50   ~ 0
+IRQ10
+Text Label 1150 7400 2    50   ~ 0
+IRQ11
+Text Label 1150 7500 2    50   ~ 0
+IRQ12
+Text Label 1150 7600 2    50   ~ 0
+IRQ15
+Text Label 1150 7700 2    50   ~ 0
+IRQ14
+Text Label 1150 7800 2    50   ~ 0
+DACK0
+Text Label 1150 7900 2    50   ~ 0
+DRQ0
+Text Label 1150 8000 2    50   ~ 0
+DACK5
+Text Label 1150 8100 2    50   ~ 0
+DRQ5
+Text Label 1150 8200 2    50   ~ 0
+DACK6
+Text Label 1150 8300 2    50   ~ 0
+DRQ6
+Text Label 1150 8400 2    50   ~ 0
+DACK7
+Text Label 1150 8500 2    50   ~ 0
+DRQ7
+Text Label 1150 8600 2    50   ~ 0
+5+
+Text Label 1150 8700 2    50   ~ 0
+MASTER
+Text Label 1150 8800 2    50   ~ 0
+GND
+Text Label 2550 8800 0    50   ~ 0
+D15
+Text Label 2550 8700 0    50   ~ 0
+D14
+Text Label 2550 8600 0    50   ~ 0
+D13
+Text Label 2550 8500 0    50   ~ 0
+D12
+Text Label 2550 8400 0    50   ~ 0
+D11
+Text Label 2550 8300 0    50   ~ 0
+D10
+Text Label 2550 8200 0    50   ~ 0
+D9
+Text Label 2550 8100 0    50   ~ 0
+D8
+Text Label 2550 8000 0    50   ~ 0
+MEMW
+Text Label 2550 7900 0    50   ~ 0
+MEMR
+Text Label 2550 7800 0    50   ~ 0
+LA17
+Text Label 2550 7700 0    50   ~ 0
+LA18
+Text Label 2550 7600 0    50   ~ 0
+LA19
+Text Label 2550 7500 0    50   ~ 0
+LA20
+Text Label 2550 7400 0    50   ~ 0
+LA21
+Text Label 2550 7300 0    50   ~ 0
+LA22
+Text Label 2550 7200 0    50   ~ 0
+LA23
+Text Label 2550 7100 0    50   ~ 0
+SBHE
+Text Label 2550 6900 0    50   ~ 0
+A0
+Text Label 2550 6800 0    50   ~ 0
+A1
+Text Label 2550 6700 0    50   ~ 0
+A2
+Text Label 2550 6600 0    50   ~ 0
+A3
+Text Label 2550 6500 0    50   ~ 0
+A4
+Text Label 2550 6400 0    50   ~ 0
+A5
+Text Label 2550 6300 0    50   ~ 0
+A6
+Text Label 2550 6200 0    50   ~ 0
+A7
+Text Label 2550 6100 0    50   ~ 0
+A8
+Text Label 2550 6000 0    50   ~ 0
+A9
+Text Label 2550 5900 0    50   ~ 0
+A10
+Text Label 2550 5700 0    50   ~ 0
+A12
+Text Label 2550 5800 0    50   ~ 0
+A11
+Text Label 2550 5600 0    50   ~ 0
+A13
+Text Label 2550 5500 0    50   ~ 0
+A14
+Text Label 2550 5400 0    50   ~ 0
+A15
+Text Label 2550 5300 0    50   ~ 0
+A16
+Text Label 2550 5200 0    50   ~ 0
+A17
+Text Label 2550 5100 0    50   ~ 0
+A18
+Text Label 2550 5000 0    50   ~ 0
+A19
+Text Label 2550 4900 0    50   ~ 0
+AEN
+Text Label 2550 4800 0    50   ~ 0
+IO_READY
+Text Label 2550 4700 0    50   ~ 0
+D0
+Text Label 2550 4600 0    50   ~ 0
+D1
+Text Label 2550 4500 0    50   ~ 0
+D2
+Text Label 2550 4400 0    50   ~ 0
+D3
+Text Label 2550 4300 0    50   ~ 0
+D4
+Text Label 2550 4200 0    50   ~ 0
+D5
+Text Label 2550 4100 0    50   ~ 0
+D6
+Text Label 2550 4000 0    50   ~ 0
+D7
+Text Label 2550 3900 0    50   ~ 0
+IO
+Text Label 1050 1225 2    50   ~ 0
+5+
+Text Label 1550 1225 0    50   ~ 0
+GND
+$Comp
+L pspice:CAP C2
+U 1 1 67C05B02
+P 1325 1825
+F 0 "C2" V 1600 1775 50  0000 L CNN
+F 1 "0.1uF" V 1525 1750 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 1325 1825 50  0001 C CNN
+F 3 "~" H 1325 1825 50  0001 C CNN
+	1    1325 1825
+	0    1    -1   0   
+$EndComp
+Text Label 1075 1825 2    50   ~ 0
+5+
+Text Label 1575 1825 0    50   ~ 0
+GND
+$Comp
+L pspice:CAP C3
+U 1 1 67C05EE6
+P 2225 1225
+F 0 "C3" V 2500 1175 50  0000 L CNN
+F 1 "0.1uF" V 2425 1150 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 2225 1225 50  0001 C CNN
+F 3 "~" H 2225 1225 50  0001 C CNN
+	1    2225 1225
+	0    1    -1   0   
+$EndComp
+Text Label 1975 1225 2    50   ~ 0
+5+
+Text Label 2475 1225 0    50   ~ 0
+GND
+$Comp
+L pspice:CAP C4
+U 1 1 67C0616F
+P 2225 1800
+F 0 "C4" V 2500 1750 50  0000 L CNN
+F 1 "0.1uF" V 2425 1725 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 2225 1800 50  0001 C CNN
+F 3 "~" H 2225 1800 50  0001 C CNN
+	1    2225 1800
+	0    1    -1   0   
+$EndComp
+Text Label 1975 1800 2    50   ~ 0
+5+
+Text Label 2475 1800 0    50   ~ 0
+GND
+Text Label 2875 1225 2    50   ~ 0
+5+
+Text Label 2875 1775 2    50   ~ 0
+5+
+Text Label 4225 1750 0    50   ~ 0
+GND
+Text Label 3725 1750 2    50   ~ 0
+5+
+$Comp
+L pspice:CAP C8
+U 1 1 67C07003
+P 3975 1750
+F 0 "C8" V 4250 1700 50  0000 L CNN
+F 1 "0.1uF" V 4175 1675 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 3975 1750 50  0001 C CNN
+F 3 "~" H 3975 1750 50  0001 C CNN
+	1    3975 1750
+	0    1    -1   0   
+$EndComp
+Text Label 4200 1225 0    50   ~ 0
+GND
+Text Label 3700 1225 2    50   ~ 0
+5+
+$Comp
+L pspice:CAP C7
+U 1 1 67C06D17
+P 3950 1225
+F 0 "C7" V 4225 1175 50  0000 L CNN
+F 1 "0.1uF" V 4150 1150 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 3950 1225 50  0001 C CNN
+F 3 "~" H 3950 1225 50  0001 C CNN
+	1    3950 1225
+	0    1    -1   0   
+$EndComp
+Text Label 3375 1775 0    50   ~ 0
+GND
+$Comp
+L pspice:CAP C6
+U 1 1 67C069EC
+P 3125 1775
+F 0 "C6" V 3400 1725 50  0000 L CNN
+F 1 "0.1uF" V 3325 1700 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 3125 1775 50  0001 C CNN
+F 3 "~" H 3125 1775 50  0001 C CNN
+	1    3125 1775
+	0    1    -1   0   
+$EndComp
+Text Label 3375 1225 0    50   ~ 0
+GND
+$Comp
+L pspice:CAP C5
+U 1 1 67C06523
+P 3125 1225
+F 0 "C5" V 3400 1175 50  0000 L CNN
+F 1 "0.1uF" V 3325 1150 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 3125 1225 50  0001 C CNN
+F 3 "~" H 3125 1225 50  0001 C CNN
+	1    3125 1225
+	0    1    -1   0   
+$EndComp
+Text Label 4625 1200 2    50   ~ 0
+5+
+Text Label 4625 1750 2    50   ~ 0
+5+
+Text Label 5975 1725 0    50   ~ 0
+GND
+Text Label 5475 1725 2    50   ~ 0
+5+
+$Comp
+L pspice:CAP C12
+U 1 1 67C08E99
+P 5725 1725
+F 0 "C12" V 6000 1675 50  0000 L CNN
+F 1 "0.1uF" V 5925 1650 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 5725 1725 50  0001 C CNN
+F 3 "~" H 5725 1725 50  0001 C CNN
+	1    5725 1725
+	0    1    -1   0   
+$EndComp
+Text Label 5950 1200 0    50   ~ 0
+GND
+Text Label 5450 1200 2    50   ~ 0
+5+
+$Comp
+L pspice:CAP C11
+U 1 1 67C08EA1
+P 5700 1200
+F 0 "C11" V 5975 1150 50  0000 L CNN
+F 1 "0.1uF" V 5900 1125 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 5700 1200 50  0001 C CNN
+F 3 "~" H 5700 1200 50  0001 C CNN
+	1    5700 1200
+	0    1    -1   0   
+$EndComp
+Text Label 5125 1750 0    50   ~ 0
+GND
+$Comp
+L pspice:CAP C10
+U 1 1 67C08EA8
+P 4875 1750
+F 0 "C10" V 5150 1700 50  0000 L CNN
+F 1 "0.1uF" V 5075 1675 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 4875 1750 50  0001 C CNN
+F 3 "~" H 4875 1750 50  0001 C CNN
+	1    4875 1750
+	0    1    -1   0   
+$EndComp
+Text Label 5125 1200 0    50   ~ 0
+GND
+$Comp
+L pspice:CAP C9
+U 1 1 67C08EAF
+P 4875 1200
+F 0 "C9" V 5150 1150 50  0000 L CNN
+F 1 "0.1uF" V 5075 1125 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 4875 1200 50  0001 C CNN
+F 3 "~" H 4875 1200 50  0001 C CNN
+	1    4875 1200
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 67C08F95
+P 12400 1150
+F 0 "R2" V 12575 1100 50  0000 L CNN
+F 1 "33k ohm" V 12500 1000 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 12330 1150 50  0001 C CNN
+F 3 "~" H 12400 1150 50  0001 C CNN
+	1    12400 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:CAP C15
+U 1 1 67C0A0D4
+P 13950 1250
+F 0 "C15" V 14225 1200 50  0000 L CNN
+F 1 "0.1uF" V 14150 1175 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 13950 1250 50  0001 C CNN
+F 3 "~" H 13950 1250 50  0001 C CNN
+	1    13950 1250
+	0    1    -1   0   
+$EndComp
+$Comp
+L pspice:CAP C14
+U 1 1 67C0A0DC
+P 13950 800
+F 0 "C14" V 14225 750 50  0000 L CNN
+F 1 "0.1uF" V 14150 725 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 13950 800 50  0001 C CNN
+F 3 "~" H 13950 800 50  0001 C CNN
+	1    13950 800 
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 67C0A766
+P 12400 1400
+F 0 "R3" V 12550 1350 50  0000 L CNN
+F 1 "220k ohm" V 12500 1225 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 12330 1400 50  0001 C CNN
+F 3 "~" H 12400 1400 50  0001 C CNN
+	1    12400 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 67C0AA5E
+P 13375 4525
+F 0 "D1" H 13368 4742 50  0000 C CNN
+F 1 "Power" H 13368 4651 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 13375 4525 50  0001 C CNN
+F 3 "~" H 13375 4525 50  0001 C CNN
+	1    13375 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 67C0B39F
+P 12000 4450
+F 0 "R4" V 12200 4400 50  0000 L CNN
+F 1 "510 ohm" V 12100 4275 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 11930 4450 50  0001 C CNN
+F 3 "~" H 12000 4450 50  0001 C CNN
+	1    12000 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:CAP C13
+U 1 1 67C0BCDF
+P 13625 3600
+F 0 "C13" V 13900 3550 50  0000 L CNN
+F 1 "4.7uF" V 13825 3525 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 13625 3600 50  0001 C CNN
+F 3 "~" H 13625 3600 50  0001 C CNN
+	1    13625 3600
+	0    1    -1   0   
+$EndComp
+$Comp
+L Timer:NE555P U1
+U 1 1 67BB7A1C
+P 13300 2200
+F 0 "U1" H 13300 2781 50  0000 C CNN
+F 1 "NE555P" H 13300 2690 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 13950 1800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 14150 1800 50  0001 C CNN
+	1    13300 2200
+	1    0    0    -1  
+$EndComp
+Text Label 13300 1800 2    50   ~ 0
+5+SB
+Text Label 12800 2400 2    50   ~ 0
+5+SB
+Text Label 13700 800  2    50   ~ 0
+5+SB
+Text Label 12800 2200 2    50   ~ 0
+CVOLT
+Text Label 14200 800  0    50   ~ 0
+CVOLT
+Text Label 12250 1150 2    50   ~ 0
+5+SB
+Text Label 12550 1150 0    50   ~ 0
+BUTTON_OUTPUT
+Text Label 12800 2000 2    50   ~ 0
+BUTTON_OUTPUT
+Text Label 13800 2400 0    50   ~ 0
+BUTTON_OUTPUT
+Text Label 13800 2000 0    50   ~ 0
+OUT
+Text Label 12550 1400 0    50   ~ 0
+OUT
+Text Label 12250 1400 2    50   ~ 0
+BUTTON_INPUT
+Text Label 12250 875  2    50   ~ 0
+GND
+Text Label 12550 875  0    50   ~ 0
+BUTTON_OUTPUT
+Text Label 13800 2200 0    50   ~ 0
+POWER_ON
+Text Label 12800 3200 0    50   ~ 0
+BUTTON_OUTPUT
+Text Label 14125 2925 0    50   ~ 0
+BUTTON_OUTPUT
+Text Label 13375 3600 2    50   ~ 0
+GND
+Text Label 12400 3200 2    50   ~ 0
+BUTTON_INPUT
+Text Label 14125 3025 0    50   ~ 0
+BUTTON_INPUT
+Text Label 13875 3600 0    50   ~ 0
+BUTTON_INPUT
+Text Label 14200 1250 0    50   ~ 0
+POWER_GOOD
+Text Label 13700 1250 2    50   ~ 0
+BUTTON_OUTPUT
+Text Label 13225 4525 2    50   ~ 0
+GND
+Text Label 13525 4525 0    50   ~ 0
+LEDR
+Text Label 12150 4450 0    50   ~ 0
+LEDR
+Text Label 11850 4450 2    50   ~ 0
+5+
+$EndSCHEMATC
